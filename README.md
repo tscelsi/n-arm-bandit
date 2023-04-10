@@ -2,6 +2,18 @@
 
 N-arm bandit simulator as per chapter two in [*Reinforcement Learning: An Introduction*](http://incompleteideas.net/book/bookdraft2017nov5.pdf).
 
+![Example plot](results.png)
+
+### Usage:
+
+```python
+from engines import EngineUCB
+
+e = EngineUCB(c=2)
+e.run()
+e.plot()
+```
+
 ### Contents:
 
 *engines.py* - contains classes with different action selection strategies.
