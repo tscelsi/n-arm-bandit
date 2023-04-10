@@ -19,10 +19,10 @@ class Engine:
         """Initalise the engine
 
         Args:
-            bandit (Bandit): Either the base or subclass of the Bandit class, which handles
-                the provisioning of rewards.
-            T (int): The number of time steps the engine should complete.
-            R (int): The number of runs the engine should complete.
+            n_bandits (int): The number of bandit problems to create.
+            n_actions (int): The number of actions the bandits can take.
+            T (int): The number of time steps the engine should complete. Otherwise can be thought of
+                as the number of times that we pull a bandit arm.
         """
         self.n_actions = n_actions
         self.n_bandits = n_bandits
