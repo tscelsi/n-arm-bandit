@@ -18,7 +18,7 @@ class Bandit:
         """
         self.n_actions = n
         self.n_bandits = k
-        self.means = np.random.normal(0, 1, (k, n))  # initialise the bandit arm means
+        self.means = np.random.normal(0, 1, (k, n))  # initialise the bandit q*(a)
 
     def __call__(self, actions: np.array=None):
         if actions is None:
